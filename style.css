@@ -20,8 +20,6 @@ form{
     margin-top: 0px;
     width: 50%;
     height: 400px;
-    vertical-align: middle;
-    transition: 2s ease-in;
 }
 .form div {
     margin: 6px auto;
@@ -46,7 +44,6 @@ a:hover{
 .wrapper{
     margin: 0px auto;
     height: 100vh;
-    /* border: 2px solid green; */
     padding: 50px 0;
     background: burlywood;
     display: none;
@@ -68,4 +65,18 @@ a:hover{
 
 .display{
     display: none;
+}
+
+.user_details{
+    margin: 0px auto;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    background: rgb(151,148,143);
+    
+
+}
+.user_details button{
+    margin-top: 20px;
 }

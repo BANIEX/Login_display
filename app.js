@@ -10,13 +10,25 @@ document.getElementsByTagName("button")[0].addEventListener("click", function(){
         password : password
     }
 
-    console.log(user)
-    user_profile.push(user)
-    console.log(user_profile)
+    user_profile.push(JSON.stringify(user));
+    alert("Submitted Successfully")
+
 })
 
 document.getElementsByClassName("admin")[0].addEventListener("click",  function(){
-    alert('hi')
     document.getElementsByClassName('wrapper')[0].style.display = "block";
     document.getElementsByClassName("form")[0].style.display = 'none'
+})
+
+document.getElementById("admin_login").addEventListener('click', function(){
+    if(document.getElementById("admin_password").value == "admin"){
+        alert("Welcome Admin");
+        document.getElementsByClassName('details')[0].innerText = user_profile;
+        document.getElementsByClassName("display")[0].style.display = "block";
+        document.getElementsByClassName("wrapper")[0].style.display = "none"
+
+    }
+    else{
+        alert("Wrong Admin Password")
+    }
 })

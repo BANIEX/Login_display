@@ -25,7 +25,7 @@
             
         <div>
             <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" value=" ">
+            <input type="password" name="password" id="password" value="">
         </div>
 
         <div>
@@ -45,11 +45,13 @@
                 <div>ADMIN</div>
                 <div>
                     <label for="admin_password">Password</label>
-                <input type="password" name="admin_password" id="admin_password">
+                <input type="password" name="admin_password" id="admin_password" value="">
                 </div>
                 <div>
-                    <a href="display.html"><button type="submit">Login</button>
-                    </a>
+                    <button type="button" id="admin_login">Enter</button>
+                    <button onClick="window.location.reload();">Back to login</button>
+                    
+                    
                 </div>
             </div>
             
@@ -58,7 +60,9 @@
 
     <div class="display">
         <div class="user_details">
-            <div class="details">sjkldjkldjkljkl</div>
+            <h3>LOGIN DETAILS</h3>
+            <div class="details"></div>
+            <button onClick="window.location.reload();">Back to login</button>
         </div>
     
     </div>
